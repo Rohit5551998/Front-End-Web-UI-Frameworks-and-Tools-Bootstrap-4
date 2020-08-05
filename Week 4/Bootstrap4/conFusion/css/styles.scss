@@ -57,8 +57,6 @@ body {
 .carousel {
     background: $background-dark;
 
-
-
     .carousel-item {
         height: $carousel-item-height;
 
@@ -69,7 +67,6 @@ body {
             min-height: 300px;
         }
     }
-
 }
 
 #carouselButton {
@@ -82,5 +79,18 @@ body {
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
+}
+
+.modal-header {
+    background: $background-dark;
+    color: floralwhite;
+
+    button,button:hover {
+        color: floralwhite;
+    }
+}
+
+.modal-body {
+    background: $background-pale;
 }
 

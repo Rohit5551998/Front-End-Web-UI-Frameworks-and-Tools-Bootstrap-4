@@ -30,9 +30,12 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
+                    <!-- Code for Login Button using data-* attributes 
                     <a data-toggle="modal" data-target="#loginModal">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
+                    -->
+                    <a id="loginButton"><span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
         </div>
@@ -75,7 +78,7 @@
         </div>
     </div>
 
-    <div id="reservetable" class="modal fade" role="dialog">
+    <div id="reservetableModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
@@ -171,7 +174,10 @@
                     title="or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom"
                     href="#reservetable" role="button">Reserve Table</a>
                     -->
+                    <!-- Code for Reserve Table button using data-* attributes
                     <a class="btn btn-block btn-small btn-warning" data-toggle="modal" data-target="#reservetable" role="button">Reserve Table</a>
+                    -->
+                    <a class="btn btn-block btn-small btn-warning" role="button" id="reservetableButton">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -423,6 +429,12 @@
                     $('#carouselButton').children('span').removeClass('fa-play');
                     $('#carouselButton').children('span').addClass('fa-pause');
                 }
+            });
+            $('#reservetableButton').click(function() {
+                $('#reservetableModal').modal('show');
+            });
+            $('#loginButton').click(function() {
+                $('#loginModal').modal('show');
             });
         });
     </script>

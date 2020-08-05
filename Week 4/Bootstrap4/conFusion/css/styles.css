@@ -56,3 +56,12 @@ body {
   top: 50%;
   transform: translateY(-50%);
   bottom: initial; }
+
+.modal-header {
+  background: #512DA8;
+  color: floralwhite; }
+  .modal-header button, .modal-header button:hover {
+    color: floralwhite; }
+
+.modal-body {
+  background: #D1C4E9; }
